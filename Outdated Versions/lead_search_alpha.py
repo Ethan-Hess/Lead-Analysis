@@ -1,6 +1,4 @@
 import pandas as pd
-from pathlib import Path
-import numpy as np
 import glob, os, math
 
 folder_path = 'E:\Data'
@@ -57,10 +55,6 @@ def chunk_search(file_list:dict, chunk_start, chunk_end):
 
     search_results.to_csv('Output\plumb_list.csv', index=False) #16.49 to search whole dataset
 
-# greg = {}
-# greg[1] = csv_files
-# print(greg)
-# chunk_search(greg, 1, 1) # inclusive
 print(len(csv_files))
 chunked_list = chunk_files(csv_files)
 chunk_search(chunked_list, 1, 5)
