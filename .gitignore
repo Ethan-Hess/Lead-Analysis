@@ -1,1 +1,4 @@
 *.csv
+# Exclude Data folder
+/Data/
+/Data - Copy/
